@@ -7,4 +7,11 @@ struct car{
     char version[50];
     char descp[100];
     bool existe;
-    float prixj;};
+    float prixj;
+    int *suiv;
+};
+struct historic{
+    long long matricule;
+    char date_sortie;
+    char date_entree;
+};
