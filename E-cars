@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct car{
+    long long matricule;
+    char marque[50];
+    char modele[50];
+    char annee[50];
+    char version[50];
+    char descp[100];
+    bool existe;
+    float prixj;};
