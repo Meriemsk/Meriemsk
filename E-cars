@@ -8,10 +8,20 @@ struct car{
     char descp[100];
     bool existe;
     float prixj;
-    int *suiv;
+    struct car *suiv;
 };
 struct historic{
     long long matricule;
     char date_sortie;
     char date_entree;
 };
+void cexiste(char m,char mo,char an,char ver,char des,float prix,car *l){
+    car *aux=l;
+    bool test=false;
+    while ((aux!=Null)&&(!test)){
+        if ((m==aux.marque)&&(mo==aux.modele)&&(an==aux.annee)&&(ver==aux.version)&&(des==aux.descp)&&(prix==aux.prixj)){
+         test=true;}
+         aux=*aux.suiv;
+         
+        
+    }
